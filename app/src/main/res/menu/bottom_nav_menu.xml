@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_calendar"
+        android:title="@string/title_Calendar"
+        android:icon="@drawable/ic_calendar" />
+
+    <item
+        android:id="@+id/nav_events"
+        android:title="@string/title_Event"
+        android:icon="@drawable/ic_event" />
+
+    <item
+        android:id="@+id/nav_calendar_selection"
+        android:title="@string/title_CalendarSelection"
+        android:icon="@drawable/ic_calendar_select" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/title_Setting"
+        android:icon="@drawable/ic_settings" />
+</menu>

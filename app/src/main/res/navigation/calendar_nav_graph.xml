@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calendar_nav_graph"
+    app:startDestination="@id/calendarListFragment">
+
+    <!-- 캘린더 목록 화면 -->
+    <fragment
+        android:id="@+id/calendarListFragment"
+        android:name="com.example.mydiaryapp.Calendar.CalendarFragment"
+        android:label="Calendar List"
+        tools:layout="@layout/fragment_calendar">
+        <!-- 캘린더 추가 버튼 클릭 시, AddCalendarFragment로 이동 -->
+        <action
+            android:id="@+id/action_to_addCalendar"
+            app:destination="@id/addCalendarFragment" />
+        <!-- 캘린더 항목 클릭 시, EditCalendarFragment로 이동 -->
+        <action
+            android:id="@+id/action_to_editCalendar"
+            app:destination="@id/editCalendarFragment" />
+    </fragment>
+
+    <!-- 캘린더 추가 화면 -->
+    <fragment
+        android:id="@+id/addCalendarFragment"
+        android:name="com.example.mydiaryapp.Calendar.CalendarAddFragment"
+        android:label="Add Calendar"
+        tools:layout="@layout/fragment_add_calendar">
+        <!-- 추가 완료 버튼 클릭 시, 다시 캘린더 목록 화면으로 돌아가기 -->
+        <action
+            android:id="@+id/action_to_calendarList"
+            app:destination="@id/calendarListFragment" />
+    </fragment>
+
+    <!-- 캘린더 수정 화면 -->
+    <fragment
+        android:id="@+id/editCalendarFragment"
+        android:name="com.example.mydiaryapp.Calendar.CalendarEditFragment"
+        android:label="Edit Calendar"
+        tools:layout="@layout/fragment_edit_calendar">
+        <!-- 수정 완료 버튼 클릭 시, 다시 캘린더 목록 화면으로 돌아가기 -->
+        <action
+            android:id="@+id/action_to_calendarList_from_edit"
+            app:destination="@id/calendarListFragment" />
+    </fragment>
+
+
+</navigation>

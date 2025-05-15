@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="error_empty_calendar_name">Calendar name cannot be empty</string>
+
+    <string name="title_Calendar">Calendar</string>
+    <string name="title_Event">Event</string>
+    <string name="title_CalendarSelection">Calendar Selection</string>
+    <string name="title_Setting">Setting</string>
+    <string name="title_Search">Search</string>
+    <string name="title_Today">Today</string>
+
+    <string name="cancel">Cancel</string>
+
+    <!--Calendar-->
+    <string name="calendar_name">Calendar Name</string>
+    <string name="add_calendar">Add Calendar</string>
+    <string name="edit_calendar">Edit Calendar</string>
+    <string name="delete_calendar">Delete Calendar</string>
+    <string name="save_calendar">Save Changes</string>
+    <string name="hint_calendar_name">Enter Calendar Name</string>
+    <string name="hint_account_name">Enter Calendar Account Name</string>
+    <string name="hint_color">Enter Calendar Color</string>
+
+    <!--Event-->
+    <string name="event_name">Event Name</string>
+    <string name="event_date">Event Date</string>
+    <string name="selected_event">Selected Date</string>
+    <string name="add_event">Add Event</string>
+    <string name="hint_event_name">Enter Event Name</string>
+    <string name="hint_search">Enter your search term</string>
+    <string name="count_event">Event Count: 0</string>
+    <string name="result_event">No search results.</string>
+
+</resources>
